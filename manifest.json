@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Switchcount",
+  "description": "This extension switches between your (my) youtube accounts",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "switch.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
